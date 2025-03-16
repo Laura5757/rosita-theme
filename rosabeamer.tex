@@ -1,0 +1,56 @@
+\documentclass{beamer}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%Definir colores
+\definecolor{mipink}{RGB}{252,137,172}  
+\definecolor{pink}{RGB}{255,105,180}  %Enlaces
+\definecolor{rosita}{RGB}{241,167,199}  %Comentarios
+%Tema beamer
+\usetheme{Madrid}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=pinkbarbie,  %Enlace dentro del doc
+    urlcolor=pinkbarbie    %URL
+}
+
+%Colores tema
+\setbeamercolor{palette primary}{bg=mipink}  %Fondo rosa para la barra principal
+\setbeamercolor{palette secondary}{bg=mipink}  %Fondo rosa para barra secundaria
+\setbeamercolor{palette tertiary}{bg=mipink}  %Fondo rosa para barra terciaria
+\setbeamercolor{palette quaternary}{bg=mipink}  %Fondo rosa para barra cuaternaria
+\setbeamercolor{structure}{fg=mipink}  %Estructura del documento (por ejemplo, títulos)
+\setbeamercolor{section in toc}{fg=mipink}  %Sección en la tabla de contenidos
+\setbeamercolor{subsection in toc}{fg=mipink}  %Subsección en la tabla de contenidos
+
+%Fondo blanco páginas
+\setbeamercolor{background canvas}{bg=white}
+
+%Color elemntos
+\setbeamercolor{itemize item}{fg=pink}  %Íconos de las listas
+\setbeamercolor{itemize subitem}{fg=rosita}  %Otros
+\setbeamercolor{itemize subsubitem}{fg=rosita}  %Otros
+
+\graphicspath{{Imágenes/}}
+\usepackage{amssymb}
+\usepackage{hyperref}  % Para los enlaces
+
+\begin{document}
+
+\title{Título de presentación en LaTeX}
+\author{Autor}
+\date{\today}
+
+\frame{\titlepage}
+
+\section{Introducción}
+\begin{frame}
+    \frametitle{Título de la Sección}
+    \begin{itemize}
+        \item Item principal
+        \item Subitem
+        \item Sub-subitem
+    \end{itemize}
+\end{frame}
+
+\end{document}
